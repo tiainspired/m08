@@ -44,21 +44,4 @@ This project is a **responsive, animated landing page** featuring a large, scala
 - **Responsive Design**
 - **Unsplash Background Image Integration**
 
----
 
-## 🚀 How to View Online
-
-This site is hosted using **GitHub Pages**.
-
-### 🔗 Live Demo:
-👉 [https://yourusername.github.io/landing-page](https://tiainspired.github.io/landing-page)
-
-> *(Replace `yourusername` with your actual GitHub username.)*
-
----
-
-## ⚙️ How to Edit / Run Locally
-
-1. Download or clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/landing-page.git
