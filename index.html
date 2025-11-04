@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: "Poppins", sans-serif;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.8)),
+        url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80")
+        no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4vw;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 1.4vw;
+      color: #f3f3f3;
+      margin-top: 10px;
+      letter-spacing: 1px;
+      animation: fadeInUp 1.5s ease 0.5s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      position: absolute;
+      bottom: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Button base */
+    .nav-btn {
+      position: relative;
+      padding: 16px 38px;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(135deg, #009ffd, #2a2a72);
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .nav-btn::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 0%; height: 100%;
+      background: linear-gradient(135deg, #ff4e00, #ec9f05);
+      border-radius: 50px;
+      transition: width 0.4s ease;
+      z-index: -1;
+    }
+
+    .nav-btn:hover::before {
+      width: 100%;
+    }
+
+    .nav-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-btn:active {
+      transform: scale(0.97);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 { font-size: 7vw; }
+      p { font-size: 3vw; }
+      .nav-btn {
+        font-size: 0.9rem;
+        padding: 12px 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to Our Creative Space</h1>
+  <p>Discover, Learn, and Connect — Designed for the Modern Mind</p>
+
+  <nav>
+    <button class="nav-btn">Products</button>
+    <button class="nav-btn">Events</button>
+    <button class="nav-btn">About</button>
+    <button class="nav-btn">Contact</button>
+    <button class="nav-btn">Blog</button>
+  </nav>
+
+  <footer>© 2025 Creative Landing Page · Designed by Tia Studio</footer>
+</body>
+</html>
